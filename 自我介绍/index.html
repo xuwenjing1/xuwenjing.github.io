@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<!-- 网页名称 -->
+    <title>plan</title>
+	<!-- 关键词 -->
+	<meta name="keyword" content="">
+	<!-- 网页描述 -->
+	<meta name="description" content="">
+	<!-- 网页作者 -->
+	<meta name="author" content="">
+	<!-- 外部文件 -->
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <style>
+        #timeBox {
+            width: 150px;
+            height: 100px;
+            position: fixed;
+            font-size: 20px;
+            top: 50px;
+            left: 50px;
+            line-height: 30px;
+        }
+        #jiazai {
+            width: 100%;
+            height: 100%;
+        }
+        #returnTop {
+            display: block;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            font-size: 24px;
+        }
+        .fixed {
+            position: fixed;
+            top: 0px;
+            left: 50%;
+            margin-left: -596px;
+            z-index: 55;
+        }
+    </style> 
+    <script>
+        window.onload = function() {
+            // <!-- 加载页面 -->
+            my$("jiazai").style.background = "url(images/jiazai5.gif) no-repeat top/100% 100%";
+            my$("returnTop").style.display = "none";
+            my$("timeBox").style.display = "none";
+            var timeId = setTimeout(function() {
+                my$("jiazai").style.background = "";
+                my$("jiazai").style.disPlay = "none";
+                my$("jiazai").style.width = "0px";
+                my$("jiazai").style.height = "0px";
+                my$("returnTop").style.display = "block";
+                my$("timeBox").style.display = "block";
+                // clearTimeout(timeId);
+            }, 2000);
+
+            // <!-- 时间 -->
+            function clock() {
+                var dt = new Date();
+                var year = dt.getFullYear();
+                var month = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var week = dt.getDay();
+                var hours = dt.getHours();
+                var minutes = dt.getMinutes();
+                var seconds = dt.getSeconds();
+
+                // 补位
+                function bu(i) {
+                    return i < 10 ? "0" + i : i;
+                }
+
+                // 用数组设置星期的格式
+                var weekArr = ["日", "一", "二", "三", "四", "五", "六"];
+                my$("timeBox").innerText = year + "年" + bu(month) + '月' + bu(day) + "日 星期" + weekArr[week] + bu(hours) + ":" + bu(minutes) + ":" + bu(seconds);
+            }
+            clock();// 页面加载完成时，初始化一次
+            var timeId = setInterval(clock, 1000);
+        }
+    </script>
+</head>
+<body id="body">
+    <div id="jiazai"></div>
+    <div class="bigBox" id="bigBox">
+        <!-- 导航栏 -->
+        <div class="nav-box" id="nav-box">
+            <ul class="navBox" id="navBox">
+                <li>
+                    <a href="#" id="linkA">首页</a>
+                </li>
+                <li>
+                    <a href="#aboutPersonal" id="linkB">关于个人</a>
+                </li>
+                <li>
+                    <a href="#hobbiesInterests" id="linkC">兴趣爱好</a>
+                </li>
+                <li>
+                    <a href="#show" id="linkD">作品展示</a>
+                </li>
+                <li>
+                    <a href="#contactMe" id="linkF">联系我</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 个人 -->
+        <div id="aboutPersonal" class="aboutPersonal">
+            <p class="person">关于个人</p>
+            <div class="logo">
+                <img class="imglogo" src="images/logo.jpg" alt="">
+            </div>
+            <div class="text2">许文静</div>
+            <div class="text3">2019级</div>
+            <div class="text4">国际商务学院</div>
+            <div class="text5">市场营销</div>
+            <span class="zhixian"></span>
+            <span class="xiaoyuan xone"></span>
+            <span class="xiaoyuan xtwo"></span>
+            <span class="xiaoyuan xthree"></span>
+            <span class="xiaoyuan xfour"></span>
+        </div>
+        <!-- 兴趣爱好 -->
+        <p id="hobbiesInterests" class="hobbiesInterests">兴趣爱好</p>
+        <div class="interests">
+            <div class="int-one">
+                <img src="images/JY.jpeg" alt="" class="interImg">
+                <p>剪映</p>
+            </div>
+            <div class="int-two">
+                <img src="images/PR.jpg" alt="" class="interImg">
+                <p>Pr</p>
+            </div>
+            <div class="int-three">
+                <img src="images/PS.jpeg" alt="" class="interImg">
+                <p>Ps</p>
+            </div>
+        </div>
+        <p class="workShow">作品展示</p>
+        <!-- 轮播图 -->
+        <div id="show" class="show">
+            <div id="box">
+                <div class="screen" id="screen">
+                    <ul id="images">
+                        <li class="lis">
+                            <img src="images/1.png" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/2.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/3.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/4.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/5.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/6.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/7.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/8.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/9.jpg" alt="">
+                        </li>
+                        <li class="lis">
+                            <img src="images/10.jpg" alt="">
+                        </li>
+                    </ul>
+                    <ol id="point"></ol>
+                </div>
+                <div id="focus">
+                    <span id="left">&lt;</span>
+                    <span id="right">&gt;</span>
+                </div>
+            </div>
+        </div>
+        <!-- 联系方式 -->
+        <div id="contactMe" class="contactMe">
+            <div class="contact">
+                <span>qq:2860263956</span>
+                <span>手机号:13559685863</span>
+            </div>
+        </div>
+    </div>
+    <a href="#jiazai" id="returnTop">返回顶部👆</a>
+    <div id="timeBox"></div>
+    <script src="js/common.js"></script>
+    <!-- 轮播图 -->
+    <script>
+        // 最外面的div
+        var box = my$("box");// 装轮播图的盒子
+        var screen = my$("screen");// 相框
+        var imgWidth = 320;// 相框的宽度
+        var ulObj = my$("images");// 装图片的ul
+        var list = ulObj.getElementsByTagName("li");// 所有图片的li节点
+        var point = my$("point");// 装小圆点的ol
+        var btnBox = my$("focus");// 左右两侧按钮的盒子
+        var flag = true;
+        // 小按钮
+        // 1.创建小按钮，根据小按钮切换对应图片
+        for(var i = 0; i < list.length - 3; i++) {
+            var liObj = document.createElement("li");
+            point.appendChild(liObj);
+            liObj.setAttribute("index", i);
+            // 注册鼠标移入事件
+            liObj.onmouseover = function() {
+                // 先干掉所有li的背景色
+                for(var j = 0; j < point.children.length; j++) {
+                    point.children[j].removeAttribute("class");
+                }
+                this.className = "current";
+                // 获取对应的索引值 
+                var picIndex = this.getAttribute("index");
+                // 移动装图片的ul
+                animateBian(ulObj, -picIndex * imgWidth);
+            }
+        }
+
+        // 设置point第一个li有默认背景颜色
+        point.firstElementChild.className = "current";
+
+        // 2.自动播放
+        // 克隆第一张图片添加到最后面
+        ulObj.appendChild(ulObj.children[0].cloneNode(true));
+        var timeId = setInterval(move, 1000);
+        var index = 0;
+        function move() {
+            flag = false;
+            if(index >= list.length - 5) {
+                // 直接跳转到第一张图片
+                index = 0;
+                ulObj.style.left = "0px";
+                flag = true;
+            }
+            index++;
+            animateBian(ulObj, -index * imgWidth);
+            // 判断小圆点
+            if(index == list.length - 3) {
+                // 把最后一个按钮的颜色干掉
+                point.children[point.children.length - 1].removeAttribute("class");
+                // 给第一个按钮设置颜色
+                point.children[0].className = "current";
+            }else {
+                // 先干掉所有li的背景色
+                for(var j = 0; j < point.children.length; j++) {
+                    point.children[j].removeAttribute("class");
+                }
+                point.children[index].className = "current";
+            }
+        }
+        
+        // 3.鼠标移入移出
+        box.onmouseover = function() {
+            btnBox.style.display = "block";
+            clearInterval(timeId);
+        }
+        box.onmouseout = function() {
+            btnBox.style.display = "none";
+            timeId = setInterval(move, 1000);
+        }
+
+        // 4.点击两侧按钮
+        my$("right").onclick = move;
+        my$("left").onclick = function() {
+            if(index == 0) {
+                index = list.length - 4;
+                ulObj.style.left = -index * imgWidth + "px";
+            }
+            index--;
+            animateBian(ulObj, -index * imgWidth);/*  */
+            for(var j = 0; j < point.children.length; j++) {
+                    point.children[j].removeAttribute("class");
+                }
+                point.children[index].className = "current";
+        }
+
+    </script>
+    <!-- 滚动 -->
+    <script>
+        window.onscroll = function() {
+            // console.log(getScroll().top);
+            // 获取元素实际高度
+            var height = my$("jiazai").offsetHeight;
+            // 判断：向上卷曲出去的距离 >= height
+            if(getScroll().top >= height) {
+                my$("navBox").className = "fixed navBox";
+            }else {
+                my$("navBox").className = "navBox";
+            }
+        }
+    </script>
+</body>
+</html>

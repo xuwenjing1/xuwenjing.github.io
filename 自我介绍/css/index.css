@@ -1,0 +1,412 @@
+.bigBox {
+    width: 1192px;
+    min-width: 1192px;
+    margin: 0 auto;
+    background-color: rgb(249,246,235);
+    color: #000;
+}
+.bigBox>.nav-box {
+    width: 1192px;
+    height: 500px;
+    background: url('../images/backguand.jpg') no-repeat center /1190px 500px;
+    /* opacity: .5; */
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.bigBox>.nav-box>.navBox {
+    display: block;
+    width: 1192px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.bigBox>.nav-box>.navBox>li {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+    padding: 0px 63px;
+    border-right: none;
+}
+.bigBox>.nav-box>.navBox>li>a:hover {
+    background-color: rgba(16,49,118,.7);
+}
+.bigBox>.nav-box>.navBox>li>a {
+    color: #fff;
+    display: block;
+    height: 80px;
+    width: 112px;
+}
+/* <!-- 个人 --> */
+.bigBox>.aboutPersonal {
+    width: 1192px;
+    height: 500px;
+    border: 1px solid #000;
+    border-top: none;
+    background-color: #fff;
+}
+.bigBox>.aboutPersonal>.person {
+    font-size: 30px;
+    font-weight: 400;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    padding-left: 30px;
+    border-bottom: 1px solid #000;
+    background-color: rgb(0,21,57);
+    color: #fff;
+}
+.bigBox>.aboutPersonal>.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+    top: -75px;
+}
+.bigBox>.aboutPersonal>.logo>.imglogo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.bigBox>.aboutPersonal>.text2 {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    left: 580px;
+    top: -80px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.bigBox>.aboutPersonal>.text3 {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    left: 405px;
+    top: -75px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.bigBox>.aboutPersonal>.text4 {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    left: 600px;
+    top: -50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.bigBox>.aboutPersonal>.text5 {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    left: 405px;
+    top: -20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.bigBox>.aboutPersonal>.zhixian{
+    display: block;
+    position: relative;
+    width: 1px;
+    height: 260px;
+    background-color: #000;
+    top: -235px;
+    left: 592px;
+}
+.bigBox>.aboutPersonal>.xiaoyuan{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    position: relative;
+}
+.bigBox>.aboutPersonal>.xone {
+    top: -480px;
+    left: 585px;
+}
+.bigBox>.aboutPersonal>.xtwo {
+    top: -450px;
+    left: 585px;
+}
+.bigBox>.aboutPersonal>.xthree {
+    top: -410px;
+    left: 585px;
+}
+.bigBox>.aboutPersonal>.xfour {
+    top: -360px;
+    left: 585px;
+}
+/* <!-- 兴趣爱好 --> */
+.bigBox>.hobbiesInterests {
+    width: 1192px;
+    border: 1px solid #000;
+    border-top: none;
+    font-size: 30px;
+    font-weight: 400;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    padding-left: 30px;
+    background-color: rgb(0,21,57);
+    color: #fff;
+}
+.bigBox>.interests {
+    width: 1192px;
+    height: 500px;
+    border: 1px solid #000;
+    border-top: none;
+    background-color: #fff;
+}
+.interImg {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    transform: rotateZ(-45deg);
+}
+.interImg:hover {
+    width: 100px;
+    height: 100px;
+}
+.bigBox>.interests>.int-one {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(173,216,230,.5);
+    transform: rotateZ(45deg);
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+.bigBox>.interests>.int-one:hover {
+    width: 255px;
+    height: 255px;
+}
+.bigBox>.interests>.int-two:hover {
+    width: 255px;
+    height: 255px;
+}
+.bigBox>.interests>.int-three:hover {
+    width: 255px;
+    height: 255px;
+}
+.bigBox>.interests>.int-one>p {
+    height: 40px;
+    line-height: 40px;
+    /* border: 1px solid #000; */
+    position: relative;
+    transform: rotateZ(-45deg);
+    top: 50px;
+    left: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.bigBox>.interests>.int-one>img {
+    top: 50px;
+    left: 50px;
+}
+.bigBox>.interests>.int-two {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(173,216,230,.5);
+    transform: rotateZ(45deg);
+    position: relative;
+    top: -150px;
+    left: 500px;
+}
+.bigBox>.interests>.int-two>p {
+    height: 40px;
+    line-height: 40px;
+    /* border: 1px solid #000; */
+    position: relative;
+    transform: rotateZ(-45deg);
+    top: 50px;
+    left: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.bigBox>.interests>.int-two>img {
+    top: 50px;
+    left: 50px;
+}
+.bigBox>.interests>.int-three {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(173,216,230,.5);
+    transform: rotateZ(45deg);
+    position: relative;
+    top: -400px;
+    left: 800px;
+}
+.bigBox>.interests>.int-three>p {
+    height: 40px;
+    line-height: 40px;
+    /* border: 1px solid #000; */
+    position: relative;
+    transform: rotateZ(-45deg);
+    top: 50px;
+    left: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.bigBox>.interests>.int-three>img {
+    top: 50px;
+    left: 50px;
+}
+
+
+.bigBox>.workShow {
+    width: 1192px;
+    border: 1px solid #000;
+    border-top: none;
+    font-size: 30px;
+    font-weight: 400;
+    height: 100px;
+    line-height: 100px;
+    text-align: left;
+    padding-left: 30px;
+    background-color: rgb(0,21,57);
+    color: #fff;
+}
+/* 轮播图 */
+.bigBox>.show {
+    width: 1192px;
+    height: 500px;
+    border: 1px solid #000;
+    border-top: none;
+    padding-top: 40px;
+    background-color: #fff;
+}
+.bigBox>.show>#box {
+    width: 980px;
+    height: 420px;
+    position: relative;
+    border: 10px solid #ccc;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.bigBox>.show>#box>#screen {
+    width: 956px;
+    height: 404px;
+    overflow: hidden;
+    position: relative;
+}
+.bigBox>.show>#box>#screen>ul {
+    width: 3100px;
+    position:absolute;
+}
+.bigBox>.show>#box>#screen>ul>li:nth-of-type(1) {
+    margin-left: 10px;
+}
+.bigBox>.show>#box>#screen>ul>li {
+    float: left;
+    padding: 40px 30px;
+}
+.bigBox>.show>#box>#screen>ul>li>img {
+    width: 256px;
+    height: 320px;
+}
+.bigBox>.show>#box>#focus {
+    display: none;
+}
+.bigBox>.show>#box>#focus>span {
+    display: block;
+    width: 30px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    transition: background-color .3s;
+}
+.bigBox>.show>#box>#focus>span:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.bigBox>.show>#box>#focus>span#left {
+    left: 0;
+}
+
+.bigBox>.show>#box>#focus>span#right {
+    right: 0;
+}
+#point {
+    position: absolute;
+    left: 50%;
+    margin-left: -55px;
+    bottom: 10px;
+}
+
+#point>li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#point>li+li {
+    margin-left: 10px;
+}
+
+#point>li.current {
+    background-color: red;
+}
+
+
+.bigBox>.contactMe {
+    width: 1192px;
+    border: 1px solid #000;
+    border-top: none;
+    font-size: 20px;
+    font-weight: 400;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgb(0,21,57);
+    color: #fff;
+    position: relative;
+}
+.bigBox>.contactMe>.contact {
+    width: 600px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+}
+.bigBox>.contactMe>.contact>span {
+    display: block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 10px;
+}
